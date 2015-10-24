@@ -45,7 +45,7 @@ def configMac(number):
 	elif not (custom_mac == 'true' and re.match("[0-9a-f]{2}([-:])[0-9a-f]{2}(\\1[0-9a-f]{2}){4}$", portal_mac.lower()) != None):
 		xbmcgui.Dialog().notification(addonname, 'Custom Mac ' + number + ' is Invalid.', xbmcgui.NOTIFICATION_ERROR );
 		portal_mac = '';
-		go=False;
+		go=True;
 		
 	return portal_mac;
 	
